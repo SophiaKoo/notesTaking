@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96327D581C79590400224BD9 /* ContextMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96327D561C79590400224BD9 /* ContextMenuCell.swift */; };
+		96327D591C79590500224BD9 /* ContextMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96327D571C79590400224BD9 /* ContextMenuCell.xib */; };
+		96327D5F1C7959AB00224BD9 /* UIView+YALConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 96327D5B1C7959AB00224BD9 /* UIView+YALConstraints.m */; };
+		96327D601C7959AB00224BD9 /* YALContextMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96327D5E1C7959AB00224BD9 /* YALContextMenuTableView.m */; };
+		96327D891C7CFE0200224BD9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96327D881C7CFE0200224BD9 /* CoreLocation.framework */; };
+		966009301C7526C8002EBE0E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9660092F1C7526C8002EBE0E /* Note.swift */; };
+		966009321C7528AE002EBE0E /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966009311C7528AE002EBE0E /* ModelManager.swift */; };
+		9660095B1C775322002EBE0E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9660095A1C775322002EBE0E /* MapKit.framework */; };
+		966E3F771C812D3000AE2304 /* PickerImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966E3F761C812D3000AE2304 /* PickerImageCell.swift */; };
+		967129A21C892C0600AF4FDF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967129A11C892C0600AF4FDF /* Reachability.swift */; };
+		968042A31C84DCFA0059AE82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968042A21C84DCFA0059AE82 /* DetailViewController.swift */; };
+		96F03B051C74DD3000EA040D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B041C74DD3000EA040D /* AppDelegate.swift */; };
+		96F03B071C74DD3000EA040D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B061C74DD3000EA040D /* ViewController.swift */; };
+		96F03B0A1C74DD3000EA040D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F03B081C74DD3000EA040D /* Main.storyboard */; };
+		96F03B0C1C74DD3000EA040D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F03B0B1C74DD3000EA040D /* Assets.xcassets */; };
+		96F03B0F1C74DD3000EA040D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F03B0D1C74DD3000EA040D /* LaunchScreen.storyboard */; };
+		96F03B171C74DEFC00EA040D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F03B161C74DEFC00EA040D /* libsqlite3.0.tbd */; };
+		96F03B191C7509D200EA040D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B181C7509D200EA040D /* TableViewController.swift */; };
+		96F03B3A1C750B7600EA040D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B2F1C750B7600EA040D /* FMDatabase.m */; };
+		96F03B3B1C750B7600EA040D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B311C750B7600EA040D /* FMDatabaseAdditions.m */; };
+		96F03B3C1C750B7600EA040D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B331C750B7600EA040D /* FMDatabasePool.m */; };
+		96F03B3D1C750B7600EA040D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B351C750B7600EA040D /* FMDatabaseQueue.m */; };
+		96F03B3E1C750B7600EA040D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B381C750B7600EA040D /* FMResultSet.m */; };
+		96F03B3F1C750B7600EA040D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96F03B391C750B7600EA040D /* Info.plist */; };
+		96F03B441C750F9800EA040D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F03B431C750F9800EA040D /* Util.swift */; };
+		96F03B461C75197700EA040D /* notes.db in Resources */ = {isa = PBXBuildFile; fileRef = 96F03B451C75152D00EA040D /* notes.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96327D561C79590400224BD9 /* ContextMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextMenuCell.swift; sourceTree = "<group>"; };
+		96327D571C79590400224BD9 /* ContextMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextMenuCell.xib; sourceTree = "<group>"; };
+		96327D5A1C7959AB00224BD9 /* UIView+YALConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YALConstraints.h"; sourceTree = "<group>"; };
+		96327D5B1C7959AB00224BD9 /* UIView+YALConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YALConstraints.m"; sourceTree = "<group>"; };
+		96327D5C1C7959AB00224BD9 /* YALContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALContextMenuCell.h; sourceTree = "<group>"; };
+		96327D5D1C7959AB00224BD9 /* YALContextMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALContextMenuTableView.h; sourceTree = "<group>"; };
+		96327D5E1C7959AB00224BD9 /* YALContextMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALContextMenuTableView.m; sourceTree = "<group>"; };
+		96327D881C7CFE0200224BD9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9660092F1C7526C8002EBE0E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		966009311C7528AE002EBE0E /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		9660095A1C775322002EBE0E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		966E3F761C812D3000AE2304 /* PickerImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImageCell.swift; sourceTree = "<group>"; };
+		967129A11C892C0600AF4FDF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		968042A21C84DCFA0059AE82 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96F03B011C74DD3000EA040D /* FinalNotesTaking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalNotesTaking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F03B041C74DD3000EA040D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96F03B061C74DD3000EA040D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96F03B091C74DD3000EA040D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96F03B0B1C74DD3000EA040D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96F03B0E1C74DD3000EA040D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96F03B101C74DD3000EA040D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96F03B161C74DEFC00EA040D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		96F03B181C7509D200EA040D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		96F03B1A1C750AFA00EA040D /* FinalNotesTaking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinalNotesTaking-Bridging-Header.h"; sourceTree = "<group>"; };
+		96F03B2E1C750B7600EA040D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = fmdb/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		96F03B2F1C750B7600EA040D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = fmdb/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		96F03B301C750B7600EA040D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = fmdb/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		96F03B311C750B7600EA040D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = fmdb/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		96F03B321C750B7600EA040D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = fmdb/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		96F03B331C750B7600EA040D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = fmdb/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		96F03B341C750B7600EA040D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = fmdb/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		96F03B351C750B7600EA040D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = fmdb/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		96F03B361C750B7600EA040D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = fmdb/FMDB.h; sourceTree = SOURCE_ROOT; };
+		96F03B371C750B7600EA040D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = fmdb/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		96F03B381C750B7600EA040D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		96F03B391C750B7600EA040D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = fmdb/Info.plist; sourceTree = SOURCE_ROOT; };
+		96F03B431C750F9800EA040D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		96F03B451C75152D00EA040D /* notes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = notes.db; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96F03AFE1C74DD3000EA040D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96327D891C7CFE0200224BD9 /* CoreLocation.framework in Frameworks */,
+				9660095B1C775322002EBE0E /* MapKit.framework in Frameworks */,
+				96F03B171C74DEFC00EA040D /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96327D4E1C792C1A00224BD9 /* ContextMenu */ = {
+			isa = PBXGroup;
+			children = (
+				96327D5A1C7959AB00224BD9 /* UIView+YALConstraints.h */,
+				96327D5B1C7959AB00224BD9 /* UIView+YALConstraints.m */,
+				96327D5C1C7959AB00224BD9 /* YALContextMenuCell.h */,
+				96327D5D1C7959AB00224BD9 /* YALContextMenuTableView.h */,
+				96327D5E1C7959AB00224BD9 /* YALContextMenuTableView.m */,
+				96327D561C79590400224BD9 /* ContextMenuCell.swift */,
+				96327D571C79590400224BD9 /* ContextMenuCell.xib */,
+			);
+			name = ContextMenu;
+			sourceTree = "<group>";
+		};
+		96F03AF81C74DD3000EA040D = {
+			isa = PBXGroup;
+			children = (
+				96327D881C7CFE0200224BD9 /* CoreLocation.framework */,
+				9660095A1C775322002EBE0E /* MapKit.framework */,
+				96F03B161C74DEFC00EA040D /* libsqlite3.0.tbd */,
+				96F03B031C74DD3000EA040D /* FinalNotesTaking */,
+				96F03B021C74DD3000EA040D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96F03B021C74DD3000EA040D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96F03B011C74DD3000EA040D /* FinalNotesTaking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96F03B031C74DD3000EA040D /* FinalNotesTaking */ = {
+			isa = PBXGroup;
+			children = (
+				96327D4E1C792C1A00224BD9 /* ContextMenu */,
+				96F03B401C750B9800EA040D /* Model */,
+				96F03B2D1C750B6400EA040D /* Fmdb */,
+				96F03B041C74DD3000EA040D /* AppDelegate.swift */,
+				96F03B061C74DD3000EA040D /* ViewController.swift */,
+				96F03B181C7509D200EA040D /* TableViewController.swift */,
+				96F03B081C74DD3000EA040D /* Main.storyboard */,
+				96F03B0B1C74DD3000EA040D /* Assets.xcassets */,
+				96F03B0D1C74DD3000EA040D /* LaunchScreen.storyboard */,
+				96F03B101C74DD3000EA040D /* Info.plist */,
+				96F03B1A1C750AFA00EA040D /* FinalNotesTaking-Bridging-Header.h */,
+				96F03B431C750F9800EA040D /* Util.swift */,
+				966E3F761C812D3000AE2304 /* PickerImageCell.swift */,
+				968042A21C84DCFA0059AE82 /* DetailViewController.swift */,
+				967129A11C892C0600AF4FDF /* Reachability.swift */,
+			);
+			path = FinalNotesTaking;
+			sourceTree = "<group>";
+		};
+		96F03B2D1C750B6400EA040D /* Fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				96F03B2E1C750B7600EA040D /* FMDatabase.h */,
+				96F03B2F1C750B7600EA040D /* FMDatabase.m */,
+				96F03B301C750B7600EA040D /* FMDatabaseAdditions.h */,
+				96F03B311C750B7600EA040D /* FMDatabaseAdditions.m */,
+				96F03B321C750B7600EA040D /* FMDatabasePool.h */,
+				96F03B331C750B7600EA040D /* FMDatabasePool.m */,
+				96F03B341C750B7600EA040D /* FMDatabaseQueue.h */,
+				96F03B351C750B7600EA040D /* FMDatabaseQueue.m */,
+				96F03B361C750B7600EA040D /* FMDB.h */,
+				96F03B371C750B7600EA040D /* FMResultSet.h */,
+				96F03B381C750B7600EA040D /* FMResultSet.m */,
+				96F03B391C750B7600EA040D /* Info.plist */,
+			);
+			name = Fmdb;
+			sourceTree = "<group>";
+		};
+		96F03B401C750B9800EA040D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96F03B451C75152D00EA040D /* notes.db */,
+				9660092F1C7526C8002EBE0E /* Note.swift */,
+				966009311C7528AE002EBE0E /* ModelManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96F03B001C74DD3000EA040D /* FinalNotesTaking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F03B131C74DD3000EA040D /* Build configuration list for PBXNativeTarget "FinalNotesTaking" */;
+			buildPhases = (
+				96F03AFD1C74DD3000EA040D /* Sources */,
+				96F03AFE1C74DD3000EA040D /* Frameworks */,
+				96F03AFF1C74DD3000EA040D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinalNotesTaking;
+			productName = FinalNotesTaking;
+			productReference = 96F03B011C74DD3000EA040D /* FinalNotesTaking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96F03AF91C74DD3000EA040D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = LambtonCollege;
+				TargetAttributes = {
+					96F03B001C74DD3000EA040D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 96F03AFC1C74DD3000EA040D /* Build configuration list for PBXProject "FinalNotesTaking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96F03AF81C74DD3000EA040D;
+			productRefGroup = 96F03B021C74DD3000EA040D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96F03B001C74DD3000EA040D /* FinalNotesTaking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96F03AFF1C74DD3000EA040D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F03B461C75197700EA040D /* notes.db in Resources */,
+				96F03B3F1C750B7600EA040D /* Info.plist in Resources */,
+				96F03B0F1C74DD3000EA040D /* LaunchScreen.storyboard in Resources */,
+				96F03B0C1C74DD3000EA040D /* Assets.xcassets in Resources */,
+				96327D591C79590500224BD9 /* ContextMenuCell.xib in Resources */,
+				96F03B0A1C74DD3000EA040D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96F03AFD1C74DD3000EA040D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F03B071C74DD3000EA040D /* ViewController.swift in Sources */,
+				96327D601C7959AB00224BD9 /* YALContextMenuTableView.m in Sources */,
+				96F03B441C750F9800EA040D /* Util.swift in Sources */,
+				96F03B3C1C750B7600EA040D /* FMDatabasePool.m in Sources */,
+				96F03B191C7509D200EA040D /* TableViewController.swift in Sources */,
+				96F03B3D1C750B7600EA040D /* FMDatabaseQueue.m in Sources */,
+				967129A21C892C0600AF4FDF /* Reachability.swift in Sources */,
+				966009301C7526C8002EBE0E /* Note.swift in Sources */,
+				968042A31C84DCFA0059AE82 /* DetailViewController.swift in Sources */,
+				966E3F771C812D3000AE2304 /* PickerImageCell.swift in Sources */,
+				96327D581C79590400224BD9 /* ContextMenuCell.swift in Sources */,
+				96F03B051C74DD3000EA040D /* AppDelegate.swift in Sources */,
+				966009321C7528AE002EBE0E /* ModelManager.swift in Sources */,
+				96327D5F1C7959AB00224BD9 /* UIView+YALConstraints.m in Sources */,
+				96F03B3A1C750B7600EA040D /* FMDatabase.m in Sources */,
+				96F03B3E1C750B7600EA040D /* FMResultSet.m in Sources */,
+				96F03B3B1C750B7600EA040D /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96F03B081C74DD3000EA040D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96F03B091C74DD3000EA040D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96F03B0D1C74DD3000EA040D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96F03B0E1C74DD3000EA040D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96F03B111C74DD3000EA040D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96F03B121C74DD3000EA040D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96F03B141C74DD3000EA040D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FinalNotesTaking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambtoncollege.FinalNotesTaking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinalNotesTaking/FinalNotesTaking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96F03B151C74DD3000EA040D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FinalNotesTaking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambtoncollege.FinalNotesTaking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinalNotesTaking/FinalNotesTaking-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96F03AFC1C74DD3000EA040D /* Build configuration list for PBXProject "FinalNotesTaking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F03B111C74DD3000EA040D /* Debug */,
+				96F03B121C74DD3000EA040D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96F03B131C74DD3000EA040D /* Build configuration list for PBXNativeTarget "FinalNotesTaking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F03B141C74DD3000EA040D /* Debug */,
+				96F03B151C74DD3000EA040D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96F03AF91C74DD3000EA040D /* Project object */;
+}
